@@ -18,7 +18,7 @@ func main() {
 
 	}, func(c *gin.Context) {
 		c.Set(keyRequestId, rand.Int())
-		log.Println("----------------")
+		log.Println("----------------",rand.Int())
 		c.Next()
 	})
 
